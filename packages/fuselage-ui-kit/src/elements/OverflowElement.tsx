@@ -77,6 +77,7 @@ const OverflowElement = ({
         onKeyDown={handleKeyDown}
         disabled={loading}
         icon='kebab'
+        rev={false}
       />
       <PositionAnimated
         width='auto'
@@ -84,7 +85,7 @@ const OverflowElement = ({
         anchor={ref}
         placement='bottom-start'
       >
-        <Options onSelect={handleSelection} options={options} cursor={cursor} />
+        <Options onSelect={handleSelection} options={options} cursor={cursor} rev={false} />
       </PositionAnimated>
     </>
   );

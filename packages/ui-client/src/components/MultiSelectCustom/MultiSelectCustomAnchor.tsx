@@ -38,7 +38,7 @@ const MultiSelectCustomAnchor = forwardRef<HTMLElement, MultiSelectCustomAnchorP
 			{...props}
 		>
 			{isDirty ? `${t(selectedOptionsTitle)} (${selectedOptionsCount})` : t(defaultTitle)}
-			<Icon name={collapsed ? 'chevron-up' : 'chevron-down'} fontSize='x20' color='hint' />
+			<Icon name={collapsed ? 'chevron-up' : 'chevron-down'} fontSize='x20' color='hint' rev={false} />
 		</Box>
 	);
 });

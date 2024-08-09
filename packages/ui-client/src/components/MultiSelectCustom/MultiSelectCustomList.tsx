@@ -25,27 +25,28 @@ const MultiSelectCustomList = ({
 	const filteredOptions = useFilteredOptions(text, options);
 
 	return (
-		<Tile overflow='auto' pb='x12' pi={0} elevation='2' w='full' bg='light' borderRadius='x2'>
+		<Tile overflow='auto' pb='x12' pi={0} elevation='2' w='full' bg='light' borderRadius='x2' rev={false}>
 			{searchBarText && (
-				<Option>
+				<Option rev={false}>
 					<SearchInput
 						name='select-search'
 						placeholder={t(searchBarText)}
 						autoComplete='off'
-						addon={<Icon name='magnifier' size='x20' />}
+						addon={<Icon name='magnifier' size='x20' rev={false} />}
 						onChange={handleChange}
 						value={text}
+						rev={false}
 					/>
 				</Option>
 			)}
 			{filteredOptions.map((option) => (
 				<Fragment key={option.id}>
 					{option.hasOwnProperty('checked') ? (
-						<Option key={option.id}>
+						<Option key={option.id} rev={false}>
 							<Box pis='x4' pb='x4' w='full' display='flex' justifyContent='space-between' is='label'>
 								{t(option.text as TranslationKey)}
 
-								<CheckBox checked={option.checked} pi={0} name={option.text} id={option.id} onChange={() => onSelected(option)} />
+								<CheckBox checked={option.checked} pi={0} name={option.text} id={option.id} onChange={() => onSelected(option)} rev={false} />
 							</Box>
 						</Option>
 					) : (

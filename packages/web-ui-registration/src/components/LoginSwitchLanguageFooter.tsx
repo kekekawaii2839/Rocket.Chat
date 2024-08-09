@@ -60,7 +60,7 @@ const LoginSwitchLanguageFooter = ({
 	return (
 		<HorizontalWizardLayoutCaption>
 			{suggestions.map((suggestion) => (
-				<Button secondary small mie={8} key={suggestion.key} onClick={handleSwitchLanguageClick(suggestion)}>
+				<Button secondary small mie={8} key={suggestion.key} onClick={handleSwitchLanguageClick(suggestion)} rev={false}>
 					<Trans i18nKey='registration.component.switchLanguage' tOptions={{ lng: suggestion.key }}>
 						Change to <strong>{{ name: suggestion.ogName }}</strong>
 					</Trans>

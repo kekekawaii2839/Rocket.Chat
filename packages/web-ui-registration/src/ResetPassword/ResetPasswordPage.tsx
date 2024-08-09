@@ -107,6 +107,7 @@ const ResetPasswordPage = (): ReactElement => {
 									id={passwordId}
 									placeholder={passwordPlaceholder || t('Create_a_password')}
 									aria-describedby={`${passwordVerifierId} ${passwordId}-error`}
+									rev={false}
 								/>
 							</FieldRow>
 							{errors?.password && (
@@ -135,6 +136,7 @@ const ResetPasswordPage = (): ReactElement => {
 										id={passwordConfirmationId}
 										placeholder={passwordConfirmationPlaceholder || t('Confirm_password')}
 										disabled={!passwordIsValid}
+										rev={false}
 									/>
 								</FieldRow>
 								{errors.passwordConfirmation && (
@@ -148,7 +150,7 @@ const ResetPasswordPage = (): ReactElement => {
 				</Form.Container>
 				<Form.Footer>
 					<ButtonGroup>
-						<Button primary loading={isSubmitting} type='submit'>
+						<Button primary loading={isSubmitting} type='submit' rev={false}>
 							{t('Reset')}
 						</Button>
 					</ButtonGroup>

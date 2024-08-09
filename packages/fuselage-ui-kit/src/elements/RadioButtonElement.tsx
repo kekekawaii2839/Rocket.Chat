@@ -25,6 +25,7 @@ const RadioButtonElement = ({
               checked={value === option.value}
               value={option.value}
               onChange={action}
+              rev={false}
             />
             <Box is='label' pis={8}>
               {surfaceRenderer.renderTextObject(

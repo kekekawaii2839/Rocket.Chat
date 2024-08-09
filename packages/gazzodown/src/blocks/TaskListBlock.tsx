@@ -16,7 +16,7 @@ const TaksListBlock = ({ tasks }: TaskListBlockProps): ReactElement => {
 		<ul className='task-list'>
 			{tasks.map((item, index) => (
 				<li key={index}>
-					<CheckBox checked={item.status} onChange={onTaskChecked?.(item)} /> <InlineElements children={item.value} />
+					<CheckBox checked={item.status} onChange={onTaskChecked?.(item)} rev /> <InlineElements children={item.value} />
 				</li>
 			))}
 		</ul>

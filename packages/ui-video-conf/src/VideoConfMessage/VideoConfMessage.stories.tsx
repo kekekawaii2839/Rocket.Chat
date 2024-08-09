@@ -54,7 +54,7 @@ export const CallingDM: ComponentStory<typeof VideoConfMessage> = () => (
 				<VideoConfMessageText>Calling...</VideoConfMessageText>
 			</VideoConfMessageContent>
 			<VideoConfMessageActions>
-				<VideoConfMessageAction icon='info' />
+				<VideoConfMessageAction icon='info' rev={false} />
 			</VideoConfMessageActions>
 		</VideoConfMessageRow>
 		<VideoConfMessageFooter>
@@ -72,7 +72,7 @@ export const CallEndedDM: ComponentStory<typeof VideoConfMessage> = () => (
 				<VideoConfMessageText>Call ended</VideoConfMessageText>
 			</VideoConfMessageContent>
 			<VideoConfMessageActions>
-				<VideoConfMessageAction icon='info' />
+				<VideoConfMessageAction icon='info' rev={false} />
 			</VideoConfMessageActions>
 		</VideoConfMessageRow>
 		<VideoConfMessageFooter>
@@ -90,7 +90,7 @@ export const CallOngoing: ComponentStory<typeof VideoConfMessage> = () => (
 				<VideoConfMessageText>Call ongoing</VideoConfMessageText>
 			</VideoConfMessageContent>
 			<VideoConfMessageActions>
-				<VideoConfMessageAction icon='info' />
+				<VideoConfMessageAction icon='info' rev={false} />
 			</VideoConfMessageActions>
 		</VideoConfMessageRow>
 		<VideoConfMessageFooter>
@@ -109,7 +109,7 @@ export const CallEnded: ComponentStory<typeof VideoConfMessage> = () => (
 				<VideoConfMessageText>Call ended</VideoConfMessageText>
 			</VideoConfMessageContent>
 			<VideoConfMessageActions>
-				<VideoConfMessageAction icon='info' />
+				<VideoConfMessageAction icon='info' rev={false} />
 			</VideoConfMessageActions>
 		</VideoConfMessageRow>
 		<VideoConfMessageFooter>

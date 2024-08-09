@@ -68,6 +68,7 @@ export const ResetPasswordForm = ({ setLoginRoute }: { setLoginRoute: DispatchLo
 								aria-describedby={`${emailId}-error`}
 								placeholder={t('registration.component.form.emailPlaceholder')}
 								id={emailId}
+								rev={false}
 							/>
 						</FieldRow>
 						{errors.email && (
@@ -87,7 +88,7 @@ export const ResetPasswordForm = ({ setLoginRoute }: { setLoginRoute: DispatchLo
 			</Form.Container>
 			<Form.Footer>
 				<ButtonGroup>
-					<Button type='submit' loading={isSubmitting} primary>
+					<Button type='submit' loading={isSubmitting} primary rev={false}>
 						{t('registration.page.resetPassword.sendInstructions')}
 					</Button>
 				</ButtonGroup>

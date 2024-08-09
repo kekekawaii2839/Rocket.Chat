@@ -32,7 +32,7 @@ const VideoConfMessageIcon = ({ variant = 'ended' }: VideoConfMessageIconProps):
 		borderRadius='x4'
 		backgroundColor={styles[variant].backgroundColor}
 	>
-		<Icon size='x20' name={styles[variant].icon} color={styles[variant].color} />
+		<Icon size='x20' name={styles[variant].icon} color={styles[variant].color} rev={false} />
 	</Box>
 );
 

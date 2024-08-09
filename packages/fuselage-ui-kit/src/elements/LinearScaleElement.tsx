@@ -65,6 +65,7 @@ const LinearScaleElement = ({
               marginInline={2}
               flexShrink={1}
               onClick={action}
+              rev={false}
             >
               {surfaceRenderer.renderTextObject(
                 {

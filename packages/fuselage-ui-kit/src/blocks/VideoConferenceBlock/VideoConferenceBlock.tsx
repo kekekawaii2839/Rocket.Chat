@@ -111,9 +111,10 @@ const VideoConferenceBlock = ({
           icon='discussion'
           title={t('Join_discussion')}
           onClick={openDiscussion}
+          rev={false}
         />
       )}
-      <VideoConfMessageAction icon='info' onClick={openCallInfo} />
+      <VideoConfMessageAction icon='info' onClick={openCallInfo} rev={false} />
     </VideoConfMessageActions>
   );
 

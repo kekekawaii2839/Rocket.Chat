@@ -47,6 +47,7 @@ const LoginServicesButton = <T extends LoginService>({
 			justifyContent='center'
 			color={buttonLabelColor}
 			backgroundColor={buttonColor}
+			rev={false}
 		>
 			{buttonLabelText || t('Sign_in_with__provider__', { provider: title })}
 		</Button>

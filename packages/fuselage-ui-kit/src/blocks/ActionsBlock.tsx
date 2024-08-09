@@ -43,7 +43,7 @@ const ActionsBlock = ({
       ))}
       {showMoreVisible && (
         <Box display='flex' margin={4}>
-          <Button small onClick={handleShowMoreClick}>
+          <Button small onClick={handleShowMoreClick} rev={false}>
             {surfaceRenderer.renderTextObject(
               { type: 'plain_text', text: 'Show more...' },
               0,

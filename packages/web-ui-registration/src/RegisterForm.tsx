@@ -150,6 +150,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 								placeholder={t('onboarding.form.adminInfoForm.fields.fullName.placeholder')}
 								aria-describedby={`${nameId}-error`}
 								id={nameId}
+								rev={false}
 							/>
 						</FieldRow>
 						{errors.name && (
@@ -177,6 +178,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 								aria-invalid={errors.email ? 'true' : 'false'}
 								aria-describedby={`${emailId}-error`}
 								id={emailId}
+								rev={false}
 							/>
 						</FieldRow>
 						{errors.email && (
@@ -200,6 +202,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 								aria-describedby={`${usernameId}-error`}
 								id={usernameId}
 								placeholder='jon.doe'
+								rev={false}
 							/>
 						</FieldRow>
 						{errors.username && (
@@ -224,6 +227,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 								id={passwordId}
 								placeholder={passwordPlaceholder || t('Create_a_password')}
 								aria-describedby={`${passwordVerifierId} ${passwordId}-error`}
+								rev={false}
 							/>
 						</FieldRow>
 						{errors?.password && (
@@ -252,6 +256,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 									aria-describedby={`${passwordConfirmationId}-error`}
 									placeholder={passwordConfirmationPlaceholder || t('Confirm_password')}
 									disabled={!passwordIsValid}
+									rev={false}
 								/>
 							</FieldRow>
 							{errors.passwordConfirmation && (
@@ -276,6 +281,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 									aria-invalid={errors.reason ? 'true' : 'false'}
 									aria-describedby={`${reasonId}-error`}
 									id={reasonId}
+									rev={false}
 								/>
 							</FieldRow>
 							{errors.reason && (
@@ -291,7 +297,7 @@ export const RegisterForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRo
 			</Form.Container>
 			<Form.Footer>
 				<ButtonGroup>
-					<Button type='submit' loading={registerUser.isLoading} primary>
+					<Button type='submit' loading={registerUser.isLoading} primary rev={false}>
 						{t('registration.component.form.joinYourTeam')}
 					</Button>
 				</ButtonGroup>

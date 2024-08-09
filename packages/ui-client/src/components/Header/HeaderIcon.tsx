@@ -8,7 +8,7 @@ type HeaderIconProps = { icon: ReactElement | { name: IconName; color?: string }
 const HeaderIcon: FC<HeaderIconProps> = ({ icon }) =>
 	icon && (
 		<Box display='flex' flexShrink={0} alignItems='center' size='x18' overflow='hidden' justifyContent='center'>
-			{isValidElement<any>(icon) ? icon : <Icon color='default' size='x18' name={icon.name} />}
+			{isValidElement<any>(icon) ? icon : <Icon color='default' size='x18' name={icon.name} rev={false} />}
 		</Box>
 	);
 

@@ -16,7 +16,7 @@ const HeaderTagIcon: FC<HeaderIconProps> = ({ icon }) => {
 			{icon}
 		</Box>
 	) : (
-		<Icon size='x12' mie={4} {...icon} />
+		<Icon size='x12' mie={4} rev={false} {...icon} />
 	);
 };
 

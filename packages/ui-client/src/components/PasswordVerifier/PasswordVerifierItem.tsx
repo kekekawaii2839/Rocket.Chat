@@ -35,7 +35,7 @@ export const PasswordVerifierItem = ({
 			aria-label={text}
 			{...props}
 		>
-			<Icon name={icon} color={color} size='x16' mie={4} />
+			<Icon name={icon} color={color} size='x16' mie={4} rev={false} />
 			<span aria-hidden>{text}</span>
 		</Box>
 	);

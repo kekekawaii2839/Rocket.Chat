@@ -12,7 +12,7 @@ type VideoConfButtonProps = {
 } & Omit<ButtonHTMLAttributes<HTMLElement>, 'ref' | 'is' | 'className' | 'size' | 'elevation'>;
 
 const VideoConfButton = ({ primary, secondary, danger, disabled, icon, children, ...props }: VideoConfButtonProps): ReactElement => (
-	<Button icon={icon} width='100%' primary={primary} danger={danger} secondary={secondary} disabled={disabled} {...props}>
+	<Button icon={icon} width='100%' primary={primary} danger={danger} secondary={secondary} disabled={disabled} {...props} is='button' className='rcx-button' animated={false} withRichContent={false} rev={false}>
 		{children}
 	</Button>
 );

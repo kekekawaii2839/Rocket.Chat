@@ -52,6 +52,7 @@ export const EmailConfirmationForm = ({ email, onBackToLogin }: { email?: string
 								aria-invalid={errors?.email?.type === 'required'}
 								placeholder={t('registration.component.form.emailPlaceholder')}
 								id='email'
+								rev={false}
 							/>
 						</FieldRow>
 						{errors.email && <FieldError>{t('registration.component.form.requiredField')}</FieldError>}
@@ -65,7 +66,7 @@ export const EmailConfirmationForm = ({ email, onBackToLogin }: { email?: string
 			</Form.Container>
 			<Form.Footer>
 				<ButtonGroup>
-					<Button loading={sendEmail.isLoading} type='submit' primary>
+					<Button loading={sendEmail.isLoading} type='submit' primary rev={false}>
 						{t('registration.component.form.sendConfirmationEmail')}
 					</Button>
 				</ButtonGroup>

@@ -27,6 +27,7 @@ const CheckboxElement = ({
               value={option.value}
               checked={isChecked}
               onChange={action}
+              rev={false}
             />
             <Box is='label' pis={8}>
               {surfaceRenderer.renderTextObject(

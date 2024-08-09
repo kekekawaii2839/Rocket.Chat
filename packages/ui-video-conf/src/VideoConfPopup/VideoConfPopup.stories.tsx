@@ -42,7 +42,7 @@ export const StartCall: ComponentStory<typeof VideoConfPopup> = () => (
 			</VideoConfPopupControllers>
 		</VideoConfPopupHeader>
 		<VideoConfPopupContent>
-			<VideoConfPopupInfo avatar={<Avatar url={avatarUrl} />} icon={<Icon name='hash' />}>
+			<VideoConfPopupInfo avatar={<Avatar url={avatarUrl} />} icon={<Icon name='hash' rev={false} />}>
 				Room Name
 			</VideoConfPopupInfo>
 		</VideoConfPopupContent>

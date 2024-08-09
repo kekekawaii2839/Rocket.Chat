@@ -34,9 +34,10 @@ const ButtonElement = ({
         warning={style === 'warning'}
         secondary={secondary}
         onClick={handleClick}
+        rev={false}
       >
         {loading ? (
-          <Throbber />
+          <Throbber rev={false} />
         ) : (
           surfaceRenderer.renderTextObject(text, 0, UiKit.BlockContext.NONE)
         )}
@@ -56,9 +57,10 @@ const ButtonElement = ({
       secondary={secondary}
       value={value}
       onClick={handleClick}
+      rev={false}
     >
       {loading ? (
-        <Throbber />
+        <Throbber rev={false} />
       ) : (
         surfaceRenderer.renderTextObject(text, 0, UiKit.BlockContext.NONE)
       )}

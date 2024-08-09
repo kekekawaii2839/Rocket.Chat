@@ -40,6 +40,7 @@ const StaticSelectElement = ({
       options={options}
       placeholder={fromTextObjectToString(block.placeholder)}
       onChange={handleChange}
+      rev={false}
     />
   );
 };

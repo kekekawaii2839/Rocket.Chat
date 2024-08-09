@@ -26,6 +26,7 @@ export const TabElement = ({
         !disabled && select(index);
         !disabled && action(e);
       }}
+      rev={false}
     >
       {surfaceRenderer.renderTextObject(title, 0, UiKit.BlockContext.NONE)}
     </TabsItem>

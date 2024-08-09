@@ -85,6 +85,7 @@ const CustomField = <T extends FieldValues>({
 							error={errorMessage}
 							options={selectOptions as SelectOption[]}
 							flexGrow={1}
+							rev={false}
 						/>
 					</FieldRow>
 					<FieldError aria-live='assertive' id={`${fieldId}-error`}>

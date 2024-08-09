@@ -169,6 +169,7 @@ export const LoginForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRoute
 										aria-invalid={errors.usernameOrEmail || errorOnSubmit ? 'true' : 'false'}
 										aria-describedby={`${usernameId}-error`}
 										id={usernameId}
+										rev={false}
 									/>
 								</FieldRow>
 								{errors.usernameOrEmail && (
@@ -191,6 +192,7 @@ export const LoginForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRoute
 										aria-invalid={errors.password || errorOnSubmit ? 'true' : 'false'}
 										aria-describedby={`${passwordId}-error`}
 										id={passwordId}
+										rev={false}
 									/>
 								</FieldRow>
 								{errors.password && (
@@ -217,7 +219,7 @@ export const LoginForm = ({ setLoginRoute }: { setLoginRoute: DispatchLoginRoute
 					</Form.Container>
 					<Form.Footer>
 						<ButtonGroup>
-							<Button loading={loginMutation.isLoading} type='submit' primary>
+							<Button loading={loginMutation.isLoading} type='submit' primary rev={false}>
 								{t('registration.component.login')}
 							</Button>
 						</ButtonGroup>

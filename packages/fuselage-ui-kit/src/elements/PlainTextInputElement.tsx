@@ -27,6 +27,7 @@ const PlainTextInputElement = ({
         value={value}
         onChange={action}
         placeholder={fromTextObjectToString(block.placeholder)}
+        rev={false}
       />
     );
   }
@@ -40,6 +41,7 @@ const PlainTextInputElement = ({
       value={value}
       onChange={action}
       placeholder={fromTextObjectToString(block.placeholder)}
+      rev={false}
     />
   );
 };
